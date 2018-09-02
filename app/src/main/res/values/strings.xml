@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MoneyBook</string>
+    <string name="menu_top">トップページ</string>
+    <string name="menu_item1">支出履歴</string>
+
+</resources>
+
