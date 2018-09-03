@@ -74,17 +74,14 @@ public class Activity1 extends AppCompatActivity {
 
             //１ヶ月タッチ
 
-            if (inGreen) {
+
                 paint.setARGB(255, 132, 255, 193);
                 paint.setStyle(Paint.Style.FILL_AND_STROKE);
                 Rect rect = new Rect(0, 900, 1200, 2000);
                 canvas.drawRect(rect, paint);
-            }
 
-            paint.setARGB(255, 255, 255, 255);
-            paint.setStyle(Paint.Style.FILL_AND_STROKE);
-            Rect rect = new Rect(0, 900, 1200, 2000);
-            canvas.drawRect(rect, paint);
+
+
 
 
             }

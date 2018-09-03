@@ -65,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
 
             switch (event.getAction()){
                 case MotionEvent.ACTION_UP:
+                    xRect = 0;
+                    xRect2 = 0;
 
                     break;
             }
@@ -94,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
             Bitmap  in = BitmapFactory.decodeResource(getResources(),R.drawable.in64);
 
             //黄色円
-            paint.setARGB(255,255,255,137);
+            paint.setARGB(255,255,255,157);
             paint.setStyle(Paint.Style.FILL_AND_STROKE);
             canvas.drawArc(120,10,970,800,0,0 + xRect2/3,true,paint);
 
@@ -131,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
 
 
             //ピンク短形
-            paint.setColor(Color.argb(255, 255, 142, 198));
+            paint.setColor(Color.argb(255, 147, 201, 255));
             paint.setStyle(Paint.Style.FILL_AND_STROKE);
             canvas.drawRect(0 , 1200 , 220 + xRect2, 1450, paint);
             canvas.drawBitmap(in,20 + xRect2,1230,paint);
@@ -143,7 +145,7 @@ public class MainActivity extends AppCompatActivity {
 
 
             //青短径
-            paint.setColor(Color.argb(255, 147, 201, 255));
+            paint.setColor(Color.argb(255, 255, 142, 198));
             paint.setStyle(Paint.Style.FILL_AND_STROKE);
             canvas.drawRect(0, 850, 220+xRect , 1100, paint);
             canvas.drawBitmap(out,20 + xRect,880,paint);
@@ -152,7 +154,7 @@ public class MainActivity extends AppCompatActivity {
             Paint textPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
             textPaint.setTextSize(50);
 
-            if(yRect >= 1400){
+            if(yRect >= 1300){
                 x = false;
 
             }else if (yRect <= 1230){
@@ -169,14 +171,14 @@ public class MainActivity extends AppCompatActivity {
             paint.setARGB(255,147,201,255);
             paint.setTextSize(90);
 
-            String btext = "" + xRect + "";
-            canvas.drawText(btext,200 + xRect,860,paint);
+            String btext = "" + xRect2 + "";
+            canvas.drawText(btext,200 + xRect2,1210,paint);
 
             //赤テキスト
             paint.setARGB(255,255,142,198);
             paint.setTextSize(90);
-            String rtext = "" + xRect2 + "";
-            canvas.drawText(rtext,200 + xRect2,1210,paint);
+            String rtext = "" + xRect + "";
+            canvas.drawText(rtext,200 + xRect,860,paint);
 
 
 
